@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "start": "node src/index.ts",
-    "build": "tsc && prisma generate",
+    "build": "tsc",
+    "postinstall": "prisma generate",
     "prepare": "husky",
     "lint": "eslint --fix",
     "format": "prettier --write \"src/**/*.ts\""
